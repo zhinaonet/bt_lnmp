@@ -29,7 +29,7 @@
 > docker volume inspect bt-www
 
 如果需要将卷目录挂载到其他目录或者硬盘，建议使用软链接挂载
-> ln - /var/lib/docker/volumes/bt-www /opt/www
+> ln -s /opt/www/_data  /var/lib/docker/volumes/bt-wwwdata/
 
 每次启动容器后自动启动所有服务 如果还没有安装docker的请运行这个安装脚本
 
