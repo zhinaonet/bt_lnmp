@@ -21,9 +21,6 @@ RUN cd /home \
 	&& rm -rf /tmp \
 	&& rm -rf /www/server/nginx/src \
 	&& rm -rf /www/server/mysql/mysql-test \
-	&& echo  > /www/server/data/ib_logfile0 \
-	&& echo  > /www/server/data/ib_logfile1 \
-	&& echo  > /www/server/data/ibdata1 \
 	&& chmod +x entrypoint.sh 
 CMD /home/entrypoint.sh
 VOLUME ["/www/"]
